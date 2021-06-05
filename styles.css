@@ -4,8 +4,10 @@ how the gallery would be made using just flex.
 
 (Neste primeiro exemplo está a forma 
 de como seria feito a galeria apenas usando flex )
+*/
 
 
+/* 
 body{
     background-color: #272527;
 }
@@ -26,8 +28,7 @@ figure {
     column-count: 5;
     column-gap: 10px;
 }
-*/ 
-
+ */
 
 
 
@@ -40,6 +41,7 @@ In the codes below implementing the idea of grid using MASONRY LAYOUT
 Attention: - Only works on Firefox Nightly 
 (Somente funciona no Firefox Nightly)
 */
+
  
  body{
     background-color: #272527;
@@ -60,16 +62,33 @@ figure {
  .container {
     display: grid;
     gap: 12px;
-    grid-template-columns: repeat(3, 2fr);    
+    grid-template-columns: repeat(4, 1fr);    
     grid-template-rows: masonry;
   } 
 
-/*  
 
 
 
-Ex: 03 - Positioning on the axis 
-(Posicionamento no eixo)
+
+/* Ex: 03 - Positioning on the axis 
+(Posicionamento no eixo) */
+
+/*
+body{
+    background-color: #272527;
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
 
 .container {
   display: grid;
@@ -83,11 +102,28 @@ Ex: 03 - Positioning on the axis
   border: 5px solid white;
 }
  
+
  */
 
 
+/*  Ex: 04 -  Landscape */
 
-/*  Ex: 04 -  Landscape
+/*
+body{
+    background-color: #272527;
+}
+
+img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    margin-bottom: 8px;
+    break-inside: avoid;
+}
 
 .container {
   display: grid;
